@@ -44,13 +44,13 @@ function App() {
             </a>
           </div>
 
-          <a
+          {/* <a
             href="/Curriculo_Natssa_Trindade_Fullstack.pdf"
             download
             className="bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg flex items-center gap-2"
           >
             <Download size={20} /> Baixar Currículo
-          </a>
+          </a> */}
         </div>
       </header>
 
