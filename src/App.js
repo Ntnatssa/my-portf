@@ -32,7 +32,7 @@ function App() {
           Especialista em construir soluções escaláveis com <strong>Node.js</strong> e interfaces de alta performance com <strong>React</strong>.
         </p>
         <div className='flex justify-center gap-6'>
-          <a href="https://github.com/" target='_blank' rel='noreferrer' className='p-2 hover:text-blue-500 transition-colors'><Github size={28} /></a>
+          <a href="https://github.com/Ntnatssa" target='_blank' rel='noreferrer' className='p-2 hover:text-blue-500 transition-colors'><Github size={28} /></a>
           <a href="https://linkedin.com/" target='_blank' rel='noreferrer' className='p-2 hover:text-blue-500 transition-colors'><Linkedin size={28} /></a>
           <a href="mailto:natssa.trindade@hotmail.com" className='p-2 hover:text-blue-500 transition-colors'><Mail size={28} /></a>
         </div>
