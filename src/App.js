@@ -28,10 +28,10 @@ function App() {
   ];
 
   return (
-    <div className={`min-h-screen transition-colors duration-500 ${darkMode ? 'bg-slate-950 text-white' : 'bg-slate-50 text-slate-900'} font-sans overflow-x-hidden`}>
+    <div className={`min-h-screen transition-colors duration-700 ${darkMode ? 'bg-slate-950 text-white' : 'bg-slate-50 text-slate-900'} font-sans overflow-x-hidden`}>
 
       {/* Botão de Alternar Luz/Preto */}
-      <div className="fixed top-6 right-6 z-50 flex flex-row items-end gap-3">
+      <div className="fixed top-6 right-6 z-50 flex flex-row items-center gap-3">
         <AnimatePresence>
           {showTooltip && (
             <motion.span
@@ -40,7 +40,7 @@ function App() {
               exit={{ opacity: 0, x: 20, scale: 0.8 }}
               className={`text-[10px] font-bold uppercase tracking-widest px-3 py-2 rounded-lg bg-blue-600 text-white shadow-xl relative whitespace-nowrap`}
             >
-              <div className='absolute top-1/2 right-1 -translate-y-1/2 w-2 h-2 bg-blue-600 rotate-45'></div>
+              <div className='absolute top-1/2 -right-1 -translate-y-1/2 w-2 h-2 bg-blue-600 rotate-45'></div>
               {darkMode ? "Mudar para modo Light" : "Altere para o modo Dark"}
             </motion.span>
           )}
