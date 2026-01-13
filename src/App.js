@@ -105,16 +105,16 @@ function App() {
 
       {/* Sobre Mim Section */}
       <motion.section
-        initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
-        className={`py-20 px-6 ${darkMode ? 'bg-slate-900/30' : 'bg-slate-100/50'}`}
+        initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}
+        className={`py-24 px-6 ${darkMode ? 'bg-slate-900/30' : 'bg-slate-100/50'}`}
       >
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }}
+            initial={{ scale: 0.8, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} transition={{ duration: 0.5 }}
             className="md:w-1/3 flex justify-center"
           >
             <div className="w-64 h-64 rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 p-1 shadow-2xl overflow-hidden">
-              <img src="/perfil.jpg" alt="Natssa" className="w-full h-full object-cover rounded-full" />
+              <motion.img whileHover={{ scale: 1.1 }} src="/perfil.jpg" alt="Natssa" className="w-full h-full object-cover rounded-full" />
             </div>
           </motion.div>
 
@@ -169,7 +169,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 text-center text-sm opacity-50 border-t border-slate-800">
+      <footer className="py-12 text-center text-xs opacity-40 uppercase tracking-[0.2em]">
         © 2026 • Natssa Trindade • Criado com React & Framer Motion
       </footer>
     </div>
