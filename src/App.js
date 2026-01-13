@@ -17,7 +17,7 @@ function App() {
       <div className="fixed top-6 right-6 z-50">
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className={`p-3 rounded-full shadow-lg transition-all hover:scale-110 ${darkMode ? 'bg-yellow-400 text-black' : 'bg-slate-900 text-white'}`}
+          className={`p-3 rounded-full shadow-lg transition-all hover:scale-110 ${darkMode ? 'bg-white-400 text-black' : 'bg-slate-900 text-white'}`}
         >
           {darkMode ? <Sun size={20} /> : <Moon size={20} />}
         </button>
@@ -78,6 +78,60 @@ function App() {
               Modelagem com <strong>Sequelize ORM</strong> em <strong>PostgreSQL</strong>. Testes de ambiente com <strong>Insomnia</strong> e variáveis com <strong>Dotenv</strong>.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Sobre Mim Section */}
+      <section className={`py-20 px-6 ${darkMode ? 'bg-slate-900/30' : 'bg-slate-100/50'}`}>
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+
+          {/* Coluna da Imagem em Círculo */}
+          <div className="md:w-1/3 flex justify-center">
+            <div className="w-64 h-64 rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 p-1 shadow-2xl transition-transform hover:scale-105">
+              <div className={`w-full h-full rounded-full overflow-hidden ${darkMode ? 'bg-slate-900' : 'bg-white'} flex items-center justify-center relative`}>
+                <img src="/perfil.jpg" alt="Natssa Trindade" className="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+
+          {/* Coluna do Texto */}
+          <div className="md:w-2/3 text-center md:text-left">
+            <h2 className="text-3xl font-bold mb-6">Sobre Mim</h2>
+
+            <p className={`text-lg leading-relaxed mb-4 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
+              Sou uma desenvolvedora apaixonada por transformar problemas complexos em soluções digitais elegantes. <strong>Eu amo o desafio de codificar</strong> e encontro verdadeira satisfação em ver uma aplicação ganhando vida através das minhas mãos.
+            </p>
+
+            <p className={`text-lg leading-relaxed mb-6 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
+              <strong>Focada em resultados</strong> e busco constantemente a excelência técnica. Atualmente, curso Análise e Desenvolvimento de Sistemas e realizo uma Pós-Graduação em Governança de TI, unindo minha paixão pelo desenvolvimento Full Stack (Node.js, React e Angular) com uma visão estratégica de processos.
+            </p>
+            <p className={`text-lg leading-relaxed mb-8 font-semibold ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+              🚀 Estou em busca da minha próxima grande oportunidade profissional, onde eu possa aplicar minha dedicação total, aprender e contribuir com o crescimento da equipe.
+            </p>
+
+            {/* Tags de destaque */}
+            <div className="flex flex-wrap justify-center md:justify-start gap-3">
+              <span className="px-4 py-2 rounded-full bg-blue-500/10 text-blue-500 text-sm font-medium border border-blue-500/20">
+                📍 Cuiabá, MT
+              </span>
+              <span className="px-4 py-2 rounded-full bg-cyan-500/10 text-cyan-500 text-sm font-medium border border-cyan-500/20">
+                🚀 Disponível para Remoto
+              </span>
+              {/* Destaques de Atitude */}
+            <div className="flex flex-wrap justify-center md:justify-start gap-3">
+              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-green-500/10 border border-green-500/20 text-green-600 text-sm font-bold">
+                ● Aberta a Oportunidades
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-500 text-sm font-bold">
+                ❤️ Alta Dedicação
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-500 text-sm font-bold">
+                🎯 Perfil Focado
+              </div>
+            </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
