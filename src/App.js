@@ -70,7 +70,7 @@ function App() {
         <motion.div variants={container} initial="hidden" animate="show" className='flex justify-center gap-6'>
           {[
             { icon: <Github size={24} />, href: "https://github.com/Ntnatssa" },
-            { icon: <Linkedin size={24} />, href: "https://www.linkedin.com/in/natssa-trindade/" },
+            { icon: <Linkedin size={24} />, href: "https://www.linkedin.com/in/natssa-trindade-b46439268/" },
             { icon: <Mail size={24} />, href: "mailto:natssa.trindade@hotmail.com" },
             { icon: <MessageCircle size={24} />, href: "https://wa.me/5565996970212" },
           ].map((social, i) => (
